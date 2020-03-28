@@ -17,6 +17,21 @@ function createCompChoice () {
 
 function game(userChoice) {
   const compChoice = createCompChoice();
+  switch (userChoice + compChoice) {
+    case "rockscissors":
+    case "scissorspaper":
+    case "paperrock":
+      console.log("User wins!");
+      break;
+    case "scissorsrock":
+    case "rockpaper":
+    case "paperscissors":
+      console.log("User lost!");
+      break;
+    default:
+      console.log("Tie!");
+  }
+
 
 }
 
